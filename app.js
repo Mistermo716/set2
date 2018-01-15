@@ -1,7 +1,6 @@
-function jediName(firstName, lastName)
-{
-    const prefix = lastName.substring(0,3);
-    const suffix = firstName.substring(0,2);
+function jediName(firstName, lastName) {
+    const prefix = lastName.substring(0, 3);
+    const suffix = firstName.substring(0, 2);
 
     return console.log(prefix + suffix);
 }
@@ -10,20 +9,17 @@ function jediName(firstName, lastName)
 function beyond(num) {
     if (num === Infinity) {
         console.log('And beyond');
-    }
-    else if (num > 0) {
+    } else if (num > 0) {
         console.log('To infinity');
-    }
-    else if (num < 0) {
+    } else if (num < 0) {
         console.log('To negative infinity');
-    }
-    else {
-    console.log('Staying home');
+    } else {
+        console.log('Staying home');
     }
 }
 
 function beyonder(num) {
-    switch(true) {
+    switch (true) {
         case num === Infinity:
             console.log('And beyond');
             break;
@@ -38,39 +34,68 @@ function beyonder(num) {
     }
 }
 
-function decode(word)
-{
+function decode(word) {
     const newArray = word.split(" ");
-    for (let i = 0; i < newArray.length; i++)
-    {
+    for (let i = 0; i < newArray.length; i++) {
         let newWord = newArray[i];
-        let letterOne = newWord.substring(0,1);
-    
+        let letterOne = newWord.substring(0, 1);
 
-    if (letterOne === 'a')
-    {
-        console.log(newWord.substring(1,2));
-    }
-    else if (letterOne === 'b')
-    {
-        console.log(newWord.substring(2,3));
-    }
-    else if (letterOne === 'c')
-    {
-        console.log(newWord.substring(3,4));
-    }
-    else if (letterOne === 'd')
-    {
-        console.log(newWord.substring(4,5));
-    }
-    else
-    {
-        console.log(" ");
-    }
+
+        if (letterOne === 'a') {
+            console.log(newWord.substring(1, 2));
+        } else if (letterOne === 'b') {
+            console.log(newWord.substring(2, 3));
+        } else if (letterOne === 'c') {
+            console.log(newWord.substring(3, 4));
+        } else if (letterOne === 'd') {
+            console.log(newWord.substring(4, 5));
+        } else {
+            console.log(" ");
+        }
     }
 
 }
 
+function monthDecoder(month) {
+    switch (month) {
+        case "January":
+            console.log(`${month} has 31 days`)
+            break;
+        case "February":
+            console.log(`${month} has 28 days`)
+            break;
+        case "March":
+            console.log(`${month} has 31 days`)
+            break;
+        case "April":
+            console.log(`${month} has 30 days`)
+            break;
+        case "May":
+            console.log(`${month} has 31 days`)
+            break;
+        case "June":
+            console.log(`${month} has 30 days`)
+            break;
+        case "July":
+            console.log(`${month} has 31 days`)
+            break;
+        case "Auguest":
+            console.log(`${month} has 31 days`)
+            break;
+        case "September":
+            console.log(`${month} has 30 days`)
+            break;
+        case "October":
+            console.log(`${month} has 31 days`)
+            break;
+        case "November":
+            console.log(`${month} has 30 days`)
+            break;
+        default:
+            console.log(`${month} has 31 days`)
+            break;
+    }
+}
 decode('craft block argon meter bells brown croon droop');
 beyonder(Infinity);
 
@@ -82,4 +107,4 @@ beyonder(Infinity);
 
 jediName("Zhou", "Yen");
 
-
+monthDecoder("January")
