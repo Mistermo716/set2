@@ -38,6 +38,40 @@ function beyonder(num) {
     }
 }
 
+function decode(word)
+{
+    const newArray = word.split(" ");
+    for (let i = 0; i < newArray.length; i++)
+    {
+        let newWord = newArray[i];
+        let letterOne = newWord.substring(0,1);
+    
+
+    if (letterOne === 'a')
+    {
+        console.log(newWord.substring(1,2));
+    }
+    else if (letterOne === 'b')
+    {
+        console.log(newWord.substring(2,3));
+    }
+    else if (letterOne === 'c')
+    {
+        console.log(newWord.substring(3,4));
+    }
+    else if (letterOne === 'd')
+    {
+        console.log(newWord.substring(4,5));
+    }
+    else
+    {
+        console.log(" ");
+    }
+    }
+
+}
+
+decode('craft block argon meter bells brown croon droop');
 beyonder(Infinity);
 
 // If num is infinite(either positive or negative) it should log out 'And beyond'.
