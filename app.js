@@ -96,6 +96,49 @@ function monthDecoder(month) {
             break;
     }
 }
+
+
+
+function rockGame(player1, player2) {
+    if (player1 === 1 && player2 === 3) {
+        console.log('Player 1 wins! Rock beats scissors.');
+    }
+    else if (player1 === 2 && player2 === 1) {
+        console.log('Player 1 wins! Paper beats rock.');
+    }
+    else if (player1 === 3 && player2 === 2) {
+        console.log('Player 1 wins! Scissors beats paper.');
+    }
+    else if (player1 === 3 && player2 === 1) {
+        console.log('Player 2 wins! Rock beats scissors.');
+    }
+    else if (player1 === 1 && player2 === 2) {
+        console.log('Player 2 wins! Paper beats rock.');
+    }
+    else if (player1 === 2 && player2 === 3) {
+        console.log('Player 2 wins! Scissors beats paper.');
+    }
+    else 
+        console.log('There is a draw.');
+}
+
+const player1 = Math.floor(Math.random() * 3);
+const player2 = Math.floor(Math.random() * 3);
+
+rockGame(player1, player2);
+
+// rock = 1; paper = 2; scissors = 3;
+
+//rock beats scissors -> 1 beat 3
+//paper beats rock -> 2 bests 1
+//scissors beats paper -> 3 beats 2
+
+
+
+
+
+
+
 decode('craft block argon meter bells brown croon droop');
 beyonder(Infinity);
 
